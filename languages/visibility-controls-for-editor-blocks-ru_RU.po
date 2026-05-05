@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Visibility Controls for Editor Blocks 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/visibility-controls-for-editor-blocks\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-10-11T19:01:50+00:00\n"
+"PO-Revision-Date: 2024-11-03 16:29+0000\n"
+"Language: ru_RU\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: visibility-controls-for-editor-blocks\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+
+#. Description of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Adds controls to hide blocks on mobile, tablet, and desktop devices in Gutenberg."
+msgstr "Добавляет элементы управления для скрытия блоков на мобильных, планшетных и настольных устройствах в Gutenberg."
+
+#: visibility-controls-for-editor-blocks.php:360
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "Any screen wider than the tablet breakpoint will be considered a desktop."
+msgstr "Любой экран, ширина которого превышает значение контрольной точки планшета, будет считаться настольным устройством."
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "Blocks hidden on mobile will be hidden on screens this size or smaller."
+msgstr "Блоки, скрытые на мобильных устройствах, будут скрыты на экранах заданного размера или меньше."
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "Blocks hidden on tablets will be hidden on screens this size or smaller."
+msgstr "Блоки, скрытые на планшетах, будут скрыты на экранах заданного размера или меньше."
+
+#: visibility-controls-for-editor-blocks.php:348
+msgid "Breakpoints Settings"
+msgstr "Настройки контрольных точек"
+
+#: src/controls/visibility-panel.js:82
+msgid "Configure Breakpoints"
+msgstr "Настройки контрольных точек"
+
+#: visibility-controls-for-editor-blocks.php:380
+msgid "Configure the breakpoints for mobile, tablet and desktop devices."
+msgstr "Настройте контрольные точки для мобильных, планшетных и настольных устройств."
+
+#: visibility-controls-for-editor-blocks.php:357
+msgid "Desktop Breakpoint (px)"
+msgstr "Контрольная точка для настольных устройств (px)"
+
+#: visibility-controls-for-editor-blocks.php:392
+msgid "Disable CSS loading on pages without Gutenberg"
+msgstr "Отключить загрузку CSS стилей на страницах без Gutenberg блоков"
+
+#: visibility-controls-for-editor-blocks.php:123
+msgid "Gutenberg Blocks Visibility"
+msgstr "Видимость Блоков Gutenberg"
+
+#: src/index.js:75
+msgid "Hidden for Logged-in Users"
+msgstr "Скрыто для вошедших пользователей"
+
+#: src/index.js:86
+msgid "Hidden for Non-Logged-in Users"
+msgstr "Скрыто для НЕ вошедших пользователей"
+
+#: src/index.js:64
+msgid "Hidden on Desktop"
+msgstr "Скрыт на настольных устройствах"
+
+#: src/index.js:42
+msgid "Hidden on Mobile"
+msgstr "Скрыт на мобильных устройствах"
+
+#: src/index.js:53
+msgid "Hidden on Tablet"
+msgstr "Скрыт на планшетах"
+
+#: src/controls/visibility-panel.js:55
+msgid "Hide for Logged-in Users"
+msgstr "Скрыть для вошедших пользователей"
+
+#: src/controls/visibility-panel.js:65
+msgid "Hide for Non-Logged-in Users"
+msgstr "Скрыть для НЕ вошедших пользователей"
+
+#: src/controls/visibility-panel.js:45
+msgid "Hide on Desktop"
+msgstr "Скрыть на настольных устройствах"
+
+#: src/controls/visibility-panel.js:25
+msgid "Hide on Mobile"
+msgstr "Скрыть на мобильных устройствах"
+
+#: src/controls/visibility-panel.js:35
+msgid "Hide on Tablet"
+msgstr "Скрыть на планшетах"
+
+#: visibility-controls-for-editor-blocks.php:289
+msgid "Leave a Review"
+msgstr "Оставить отзыв"
+
+#: visibility-controls-for-editor-blocks.php:351
+msgid "Mobile Breakpoint (px)"
+msgstr "Контрольная точка для мобильных устройств (px)"
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "Note: "
+msgstr "Примечание: "
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "Recommended: between 320px and 600px for mobiles."
+msgstr "Рекомендуемый размер: от 320px до 600px для мобильных устройств."
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "Recommended: between 601px and 1024px for tablets."
+msgstr "Рекомендуемый размер: от 601px до 1024px для планшетов."
+
+#: visibility-controls-for-editor-blocks.php:417
+msgid "Settings"
+msgstr "Настройки"
+
+#: visibility-controls-for-editor-blocks.php:363
+msgid "Styles loading"
+msgstr "Загрузка стилей"
+
+#: visibility-controls-for-editor-blocks.php:354
+msgid "Tablet Breakpoint (px)"
+msgstr "Контрольная точка для планшетов (px)"
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "There's no input for the desktop breakpoint because it is automatically defined"
+msgstr "Контрольную точку для настольных устройств вводить не нужно, поскольку она определяется автоматически"
+
+#: visibility-controls-for-editor-blocks.php:393
+msgid "This includes archive pages such as categories and tags, as well as other pages that do not contain Gutenberg blocks."
+msgstr "Сюда входят архивные страницы, такие как категории и теги, а также другие страницы, не содержащие блоков Gutenberg."
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "This option defines the screen width (in pixels) that determines a mobile device."
+msgstr "Этот параметр задает ширину экрана (в пикселях), которую определяет мобильное устройство."
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "This option defines the screen width (in pixels) that determines a tablet device."
+msgstr "Этот параметр задает ширину экрана (в пикселях), которая определяет планшетное устройство."
+
+#. Plugin Name of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Visibility Controls for Editor Blocks"
+msgstr "Контроль видимости для Gutenberg блоков"
+
+#: visibility-controls-for-editor-blocks.php:123
+msgid "Visibility Controls for Gutenberg Blocks"
+msgstr "Контроль видимости для Gutenberg блоков"
+
+#: src/controls/visibility-panel.js:19
+msgid "Visibility Settings"
+msgstr "Настройки видимости"
+
+#: visibility-controls-for-editor-blocks.php:393
+msgid "When this option is enabled, the plugin will prevent loading its CSS code on pages that do not use the Gutenberg editor."
+msgstr "Если эта опция включена, плагин не будет загружать CSS стили на страницах, не использующих редактор Gutenberg."
+
+#: visibility-controls-for-editor-blocks.php:315
+msgid "Video guide"
+msgstr "Видеоинструкция"
+
+#: visibility-controls-for-editor-blocks.php:316
+msgid "Watch short tutorials for setting up block visibility rules."
+msgstr "Посмотрите короткие инструкции по настройке правил видимости блоков."
+
+#: visibility-controls-for-editor-blocks.php:323
+msgid "Open video playlist"
+msgstr "Открыть плейлист с видео"
+
+#: visibility-controls-for-editor-blocks.php:283
+msgid "Enjoying Visibility Controls?"
+msgstr "Нравится Visibility Controls?"
+
+#: visibility-controls-for-editor-blocks.php:284
+msgid "If this plugin saves you time, a quick review on WordPress.org helps other Gutenberg users find it."
+msgstr "Если плагин экономит вам время, короткий отзыв на WordPress.org поможет другим пользователям Gutenberg его найти."
+
+#: visibility-controls-for-editor-blocks.php:292
+msgid "Maybe later"
+msgstr "Позже"
+
+#: visibility-controls-for-editor-blocks.php:295
+msgid "Do not ask again"
+msgstr "Больше не спрашивать"
+
+#: visibility-controls-for-editor-blocks.php:328
+msgid "Support the plugin"
+msgstr "Поддержать плагин"
+
+#: visibility-controls-for-editor-blocks.php:329
+msgid "Want to support future updates? You can buy me a coffee."
+msgstr "Хотите поддержать будущие обновления? Вы можете купить мне кофе."
+
+#: visibility-controls-for-editor-blocks.php:331
+msgid "Buy me a coffee"
+msgstr "Купить мне кофе"
+
+#: visibility-controls-for-editor-blocks.php:420
+msgid "Donate"
+msgstr "Поддержать"
+
+#: src/index.js:49
+msgid "and Tablet"
+msgstr " и планшетах"
+
+#: src/index.js:60
+msgid "and Desktop"
+msgstr " и настольных устройствах"
+
+#: src/index.js:71
+msgid "and Logged-in Users"
+msgstr " и для вошедших пользователей"
+
+#: src/index.js:82
+msgid "and Non-Logged-in Users"
+msgstr " и для НЕ вошедших пользователей"
+
+#. Author of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Denis Doroshchuk"
+msgstr "Денис Дорощук"
+
+#. Author URI of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "https://doroshchuk.me/"
+msgstr "https://doroshchuk.me/"

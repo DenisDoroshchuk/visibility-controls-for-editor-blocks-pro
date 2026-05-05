@@ -3,7 +3,7 @@
  * Plugin Name: Visibility Controls for Editor Blocks Pro
  * Description: Premium version of Visibility Controls for Editor Blocks.
  * Tags: block, visibility, gutenberg, responsive, breakpoints
- * Version: 1.0.0
+ * Version: 1.2.3
  * Requires at least: 5.0
  * Requires PHP: 7.2
  * Author: Denis Doroshchuk
@@ -13,13 +13,26 @@
  * License: GPLv3.0
  */
 
-// Exit if accessed directly.
+// Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$gbvc_is_premium = 'visibility-controls-for-editor-blocks-pro' === basename( __DIR__ );
+
+if ( $gbvc_is_premium ) {
+	register_activation_hook(
+		__FILE__,
+		static function (): void {
+			if ( function_exists( 'deactivate_plugins' ) ) {
+				deactivate_plugins( 'visibility-controls-for-editor-blocks/visibility-controls-for-editor-blocks.php' );
+			}
+		}
+	);
+}
+
 if ( function_exists( 'gbvc_fs' ) ) {
-	gbvc_fs()->set_basename( true, __FILE__ );
+	gbvc_fs()->set_basename( $gbvc_is_premium, __FILE__ );
 	return;
 }
 
@@ -39,7 +52,7 @@ if ( ! function_exists( 'gbvc_fs' ) ) {
 					'premium_slug'        => 'visibility-controls-for-editor-blocks-pro',
 					'type'                => 'plugin',
 					'public_key'          => 'pk_e6a53b83c36649824485a84562e90',
-					'is_premium'          => true,
+					'is_premium'          => 'visibility-controls-for-editor-blocks-pro' === basename( __DIR__ ),
 					'premium_suffix'      => 'Pro',
 					'has_premium_version' => true,
 					'has_addons'          => false,
@@ -64,3 +77,9 @@ if ( ! function_exists( 'gbvc_fs' ) ) {
 	// Signal that SDK was initiated.
 	do_action( 'gbvc_fs_loaded' );
 }
+
+
+define( 'GBVC_PLUGIN_FILE', __FILE__ );
+define( 'GBVC_PLUGIN_DIR', __DIR__ . '/' );
+
+require_once GBVC_PLUGIN_DIR . 'includes/plugin.php';

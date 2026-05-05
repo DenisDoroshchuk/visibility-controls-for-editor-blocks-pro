@@ -1,0 +1,235 @@
+# Copyright (C) 2026 Denis Doroshchuk
+# This file is distributed under the GPLv3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Visibility Controls for Editor Blocks 1.2.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/visibility-controls-for-editor-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-04T19:58:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: visibility-controls-for-editor-blocks\n"
+
+#. Plugin Name of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Visibility Controls for Editor Blocks"
+msgstr ""
+
+#. Description of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Adds controls to hide blocks on mobile, tablet, and desktop devices in Gutenberg."
+msgstr ""
+
+#. Author of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "Denis Doroshchuk"
+msgstr ""
+
+#. Author URI of the plugin
+#: visibility-controls-for-editor-blocks.php
+msgid "https://doroshchuk.me/"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:123
+msgid "Visibility Controls for Gutenberg Blocks"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:123
+msgid "Gutenberg Blocks Visibility"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:283
+msgid "Enjoying Visibility Controls?"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:284
+msgid "If this plugin saves you time, a quick review on WordPress.org helps other Gutenberg users find it."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:289
+msgid "Leave a Review"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:292
+msgid "Maybe later"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:295
+msgid "Do not ask again"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:315
+msgid "Video guide"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:316
+msgid "Watch short tutorials for setting up block visibility rules."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:323
+msgid "Open video playlist"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:328
+msgid "Support the plugin"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:329
+msgid "Want to support future updates? You can buy me a coffee."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:331
+msgid "Buy me a coffee"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:348
+msgid "Breakpoints Settings"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:351
+msgid "Mobile Breakpoint (px)"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:354
+msgid "Tablet Breakpoint (px)"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:357
+msgid "Desktop Breakpoint (px)"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:360
+msgid "Advanced Settings"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:363
+msgid "Styles loading"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:380
+msgid "Configure the breakpoints for mobile, tablet and desktop devices."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:392
+msgid "Disable CSS loading on pages without Gutenberg"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:393
+msgid "When this option is enabled, the plugin will prevent loading its CSS code on pages that do not use the Gutenberg editor."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:393
+msgid "This includes archive pages such as categories and tags, as well as other pages that do not contain Gutenberg blocks."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "This option defines the screen width (in pixels) that determines a mobile device."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "Blocks hidden on mobile will be hidden on screens this size or smaller."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:400
+msgid "Recommended: between 320px and 600px for mobiles."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "This option defines the screen width (in pixels) that determines a tablet device."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "Blocks hidden on tablets will be hidden on screens this size or smaller."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:407
+msgid "Recommended: between 601px and 1024px for tablets."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "Note: "
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "There's no input for the desktop breakpoint because it is automatically defined"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:412
+msgid "Any screen wider than the tablet breakpoint will be considered a desktop."
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:417
+msgid "Settings"
+msgstr ""
+
+#: visibility-controls-for-editor-blocks.php:420
+msgid "Donate"
+msgstr ""
+
+#: src/controls/visibility-panel.js:19
+msgid "Visibility Settings"
+msgstr ""
+
+#: src/controls/visibility-panel.js:25
+msgid "Hide on Mobile"
+msgstr ""
+
+#: src/controls/visibility-panel.js:35
+msgid "Hide on Tablet"
+msgstr ""
+
+#: src/controls/visibility-panel.js:45
+msgid "Hide on Desktop"
+msgstr ""
+
+#: src/controls/visibility-panel.js:55
+msgid "Hide for Logged-in Users"
+msgstr ""
+
+#: src/controls/visibility-panel.js:65
+msgid "Hide for Non-Logged-in Users"
+msgstr ""
+
+#: src/controls/visibility-panel.js:82
+msgid "Configure Breakpoints"
+msgstr ""
+
+#: src/index.js:42
+msgid "Hidden on Mobile"
+msgstr ""
+
+#: src/index.js:49
+msgid "and Tablet"
+msgstr ""
+
+#: src/index.js:53
+msgid "Hidden on Tablet"
+msgstr ""
+
+#: src/index.js:60
+msgid "and Desktop"
+msgstr ""
+
+#: src/index.js:64
+msgid "Hidden on Desktop"
+msgstr ""
+
+#: src/index.js:71
+msgid "and Logged-in Users"
+msgstr ""
+
+#: src/index.js:75
+msgid "Hidden for Logged-in Users"
+msgstr ""
+
+#: src/index.js:82
+msgid "and Non-Logged-in Users"
+msgstr ""
+
+#: src/index.js:86
+msgid "Hidden for Non-Logged-in Users"
+msgstr ""
