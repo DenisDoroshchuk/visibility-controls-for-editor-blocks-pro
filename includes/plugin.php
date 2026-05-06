@@ -9,6 +9,24 @@ function gbvc_set_initial_review_prompt_delay(): void {
 
 register_activation_hook( GBVC_PLUGIN_FILE, 'gbvc_set_initial_review_prompt_delay' );
 
+// Delete plugin options when Freemius completes the uninstall flow.
+function gbvc_delete_options(): void {
+	delete_option( 'gbvc_mobile_breakpoint' );
+	delete_option( 'gbvc_tablet_breakpoint' );
+	delete_option( 'gbvc_disable_styles_on_non_gutenberg_pages' );
+	delete_option( 'gbvc_review_prompt_eligible_after' );
+	delete_option( 'gbvc_review_prompt_later_until' );
+	delete_option( 'gbvc_review_prompt_dismissed' );
+}
+
+function gbvc_fs_uninstall_cleanup(): void {
+	gbvc_delete_options();
+}
+
+if ( function_exists( 'gbvc_fs' ) ) {
+	gbvc_fs()->add_action( 'after_uninstall', 'gbvc_fs_uninstall_cleanup' );
+}
+
 // Load text domain for translations
 function gbvc_load_text_domain(): void {
 	load_plugin_textdomain( 'visibility-controls-for-editor-blocks', false, dirname( plugin_basename( GBVC_PLUGIN_FILE ) ) . '/languages' );
