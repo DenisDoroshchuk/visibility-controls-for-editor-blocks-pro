@@ -4,12 +4,24 @@ import VisibilityPanel from './controls/visibility-panel';
 import { isUnsupportedBlock } from './utils/block-support';
 import { __ } from '@wordpress/i18n';
 
+const canUseProFeatures = Boolean( window.gbvcEditorData?.canUseProFeatures );
+
 const visibilityAttributes = {
 	hideOnMobile: { type: 'boolean', default: false },
 	hideOnTablet: { type: 'boolean', default: false },
 	hideOnDesktop: { type: 'boolean', default: false },
 	hideForLoggedInUsers: { type: 'boolean', default: false },
 	hideForNonLoggedInUsers: { type: 'boolean', default: false },
+	gbvcRoleRule: { type: 'string', default: 'none' },
+	gbvcUserRoles: { type: 'array', default: [] },
+	gbvcScheduleEnabled: { type: 'boolean', default: false },
+	gbvcScheduleStart: { type: 'string', default: '' },
+	gbvcScheduleEnd: { type: 'string', default: '' },
+	gbvcScheduleStartTimestamp: { type: 'number', default: 0 },
+	gbvcScheduleEndTimestamp: { type: 'number', default: 0 },
+	gbvcGetParamEnabled: { type: 'boolean', default: false },
+	gbvcGetParamName: { type: 'string', default: '' },
+	gbvcGetParamValue: { type: 'string', default: '' },
 };
 
 // Register custom attributes
@@ -35,6 +47,9 @@ addFilter(
 					hideOnDesktop,
 					hideForLoggedInUsers,
 					hideForNonLoggedInUsers,
+					gbvcRoleRule,
+					gbvcScheduleEnabled,
+					gbvcGetParamEnabled,
 				} = attributes;
 
 				let label = '';
@@ -85,6 +100,22 @@ addFilter(
 						  )
 						: __(
 								'Hidden for Non-Logged-in Users',
+								'visibility-controls-for-editor-blocks'
+						  );
+				}
+				if (
+					canUseProFeatures &&
+					( ( gbvcRoleRule && gbvcRoleRule !== 'none' ) ||
+						gbvcScheduleEnabled ||
+						gbvcGetParamEnabled )
+				) {
+					label += label
+						? __(
+								'and Pro Rules',
+								'visibility-controls-for-editor-blocks'
+						  )
+						: __(
+								'Pro Visibility Rules',
 								'visibility-controls-for-editor-blocks'
 						  );
 				}

@@ -3,7 +3,7 @@
  * Plugin Name: Visibility Controls for Editor Blocks Pro
  * Description: Premium version of Visibility Controls for Editor Blocks.
  * Tags: block, visibility, gutenberg, responsive, breakpoints
- * Version: 1.2.3
+ * Version: 1.2.4
  * Requires at least: 5.0
  * Requires PHP: 7.2
  * Author: Denis Doroshchuk
